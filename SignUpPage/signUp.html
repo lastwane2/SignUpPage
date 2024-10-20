@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="./sendData.js" defer></script>
+</head>
+    <body>
+        <main>
+            <div class="left-container">
+                <div class="logo-container">
+                    <a class="logo" href="../SignInPage/signIn.html">Mikrozaim</a>
+                </div>
+
+                <div class="register-container">
+                    
+                    <div class="register-title">
+                        Sign Up
+                    </div>
+                    
+                    <div class="register-notlogged">
+                        If you have an account register <br />
+                        You can Sign in
+                    </div>
+
+                    <form action="#">
+
+                        <div class="register-email-container">
+                            <p class="heading-email">Email</p>
+                            <div id="email-input-container">
+                                <img src="../assets/message1.svg">
+                                <input id="email-input" type="email" placeholder="Enter your email adress"
+                                       data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"/>
+                            </div>
+                        </div>
+
+                        <div class="register-password-container">
+                            <p id="heading-password">Password</p>
+                            <div id="password-input-container">
+                                <img src="../assets/padlock1.svg">
+                                <input id="password-input" type="password" placeholder="Enter your password"
+                                       data-reg="(?=^.{8,}$)((?=.*\da)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"/>
+                            </div>
+                        </div>
+
+                        <div class="register-password-repeat-container">
+                            <p class="heading-password-repeat">Repeat your password</p>
+                            <div id="password-repeat-input-container">
+                                <img src="../assets/padlock1.svg">
+                                <input id="password-repeat-input" type="password" placeholder="Enter your password one more"
+                                       data-reg="(?=^.{8,}$)((?=.*\da)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"/>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="alert">It's OK</div>
+
+                    <div class="register-button-container">
+                        <button class="register-button">
+                            Sign Up
+                        </button>
+<!--                        -->
+                    </div>
+
+
+                </div>
+            </div>
+            
+            
+            
+            <div class="right-container">
+                
+                <div class="phonenumber">
+
+                    +7-800-555-35-35
+                </div>
+
+                <div class="decorative-container">
+
+                    <div class="decorative-logo-container">
+                        <img src="../assets/Saly-10.svg" />
+                    </div>
+
+                    <div class="decorative-text-container">
+                        
+                        <div class="decorative-title">Sign in to name</div>
+
+                        <div class="decorative-main-text">Loans for IT specialists under 2%</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </body>
+</html>
